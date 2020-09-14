@@ -1,0 +1,22 @@
+li {
+    list-style-type: none;
+    max-width: 200px;
+    padding: 8px;
+    margin: 8px auto;
+    background: #eee;
+    border: 1px dotted #ddd;
+}
+
+.mouse {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 20px 20px 20px;
+    font-family: calibri;
+    background: black;
+    color: lightseagreen;
+}
+
+.line {
+    text-decoration: line-through;
+}
