@@ -19,8 +19,7 @@ const getTodos = (cb) => {
 
 
 getTodos((err, data) => {
-    console.log('callback fired');
-    console.log(err, data);
+
     if(err){
         console.log(err);
     }

@@ -1,11 +1,11 @@
 //async & await
 
 const getTodos = async (resource) =>{
-    const response = await fetch(resource);
+    const response = await fetch(resource); //await a promise (returns a promise)
     if(response.status !== 200){
         throw new Error('cannot fetch the data');
     }
-    const data = await response.json();
+    const data = await response.json(); //await a promise (returns a promise)
     return data;
 };
 
@@ -13,8 +13,8 @@ console.log(1);
 console.log(2);
 getTodos('/todos/luigi.json')
     .then(data => {
-    console.log('resolved 1:',data);
-    return getTodos('/todos/mario.json');
+        console.log('resolved 1:',data);
+        return getTodos('/todos/mario.json');
 })
     .then((data) => {
         console.log('resolved 2:', data);

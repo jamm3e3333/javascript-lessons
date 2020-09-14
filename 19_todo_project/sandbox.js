@@ -12,7 +12,7 @@ const generateTemplate = todo =>{
 }
 
 addForm.addEventListener('submit', e => {
-    console.log(e);
+    console.log(e.target.add.value);
     e.preventDefault();
     const todo = addForm.add.value.trim();
     if(todo.length){
