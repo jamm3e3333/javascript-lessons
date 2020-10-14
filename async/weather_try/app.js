@@ -1,8 +1,9 @@
 const request = require('request');
 const apiKey = '107f1eed6767999491c3bdf3fe219d0d';
+const mode = 'json';
 
 weather = (city,cb) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&APPID=${apiKey}&units=metric`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&APPID=${apiKey}&units=metric&mode=${mode}`;
     request({url: url, json: true},(error,response) => {
         if(error){
             cb('The url doesn\'t exist!',undefined);

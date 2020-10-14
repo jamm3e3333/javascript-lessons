@@ -19,7 +19,7 @@ weather.weather(args,(error,data) => {
     else{
         weatherObj = weather.infos(data);
         dataParsed = JSON.stringify(weatherObj);
-        console.log(data);
+        console.log(data.body);
         fs.writeFileSync('./weather.json',dataParsed);
     }
 });
