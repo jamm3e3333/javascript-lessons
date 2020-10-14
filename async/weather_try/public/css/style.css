@@ -1,0 +1,40 @@
+html{
+    background-image: url('../img/bk.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: calibri;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #4d79ff;
+    font-size: 50px;
+}
+h2{
+    text-transform: uppercase;
+    color: #4d79ff;
+    font-size: 35px;
+}
+
+div{
+    background: white;
+    padding: 10px 10px 10px 10px;
+    opacity: 0.8;
+    margin-top: 50px;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+p{
+    color: black;
+    font-size: 40px;
+}
+
+hr{
+    text-align: center;
+    width: 50%;
+}
+
