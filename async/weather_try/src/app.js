@@ -27,5 +27,5 @@ app.get('',(req,res) => {
         temp: data.temp,
         feelsLike: data.feels_like,
         pressure: data.pressure
-    })
-})
+    });
+});
