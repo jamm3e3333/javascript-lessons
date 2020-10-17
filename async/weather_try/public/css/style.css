@@ -4,24 +4,25 @@ html{
     background-repeat: no-repeat;
     text-align: center;
     font-family: calibri;
+    font-size: 20px;
 }
 
 h1{
+    margin: 60px 10px;
     text-transform: uppercase;
     color: #4d79ff;
-    font-size: 50px;
+    font-size: 40px;
 }
 h2{
     text-transform: uppercase;
     color: #4d79ff;
-    font-size: 35px;
+    font-size: 20px;
 }
 
-div{
+div.main{
     background: white;
     padding: 10px 10px 10px 10px;
     opacity: 0.8;
-    margin-top: 50px;
     position: absolute;
     left: 25%;
     width: 50%;
@@ -30,7 +31,6 @@ div{
 
 p{
     color: black;
-    font-size: 40px;
 }
 
 hr{
@@ -38,3 +38,25 @@ hr{
     width: 50%;
 }
 
+input[type="text"]{
+    margin: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline:none;
+    width: 80%;
+}
+
+input[type="text"]:focus{
+    border: 3px solid #555;
+}
+
+button{
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}

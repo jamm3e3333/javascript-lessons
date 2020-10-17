@@ -1,7 +1,7 @@
 const request = require('request');
 const chalk = require('chalk');
 const fs = require('fs');
-const weather = require('./app.js');
+const weather = require('./weather.js');
 const args = process.argv[2].toString();
 
 if(!args){
