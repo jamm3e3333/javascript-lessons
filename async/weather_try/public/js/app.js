@@ -10,7 +10,8 @@ form.addEventListener('submit', (e) => {
     weatherDat.textContent = '';
 
     if(!location){
-        console.log('Put some values!');
+        place.textContent = 'There is no location.';
+        weatherDat.textContent = '';
     }
     else{
         getWeather(`http://localhost:3000/weather?address=${location}`)

@@ -8,15 +8,16 @@ html{
 }
 
 h1{
-    margin: 60px 10px;
+    margin: 40px 10px;
     text-transform: uppercase;
-    color: #4d79ff;
-    font-size: 40px;
+    color: #ffffff;
+    font-size: 50px;
 }
 h2{
     text-transform: uppercase;
+    margin-top: 60px;
     color: #4d79ff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 div.main{
@@ -39,13 +40,13 @@ hr{
 }
 
 input[type="text"]{
-    margin: 20px;
+    margin: 50px 0;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 3px solid #ccc;
     transition: 0.5s;
     outline:none;
-    width: 80%;
+    width: 40%;
 }
 
 input[type="text"]:focus{
@@ -53,8 +54,7 @@ input[type="text"]:focus{
 }
 
 button{
-    padding: 10px 10px;
-    margin: 10px;
+    padding: 12px 10px;
 }
 
 button:hover{
