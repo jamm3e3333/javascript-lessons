@@ -6,7 +6,8 @@ const weatherDat =document.querySelector('#weatherMsg');
 
 form.addEventListener('submit', (e) => {
     const location = loc.value;
-    console.log(location);
+    place.textContent = 'Loading...';
+    weatherDat.textContent = '';
 
     if(!location){
         console.log('Put some values!');
@@ -14,11 +15,12 @@ form.addEventListener('submit', (e) => {
     else{
         getWeather(`http://localhost:3000/weather?address=${location}`)
         .then(({body, address}) => {
-            place.innerText = `Weather in ${address}, ${body.sys.country}:`;
+            place.textContent= `Weather in ${address}, ${body.sys.country}:`;
             weatherDat.innerText = `${body.weather[0].description}\nTemperature: ${body.main.temp} °C\nFeels like: ${body.main.feels_like} °C\nPressure: ${body.main.pressure} hPa\nHumidity: ${body.main.humidity} %\n`;
         })
         .catch((err) => {
-            console.log(err);
+            place.textContent = 'Location not found.';
+            weatherDat.textContent = '';
         });
     }
     e.preventDefault();
